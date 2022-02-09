@@ -5,11 +5,11 @@
     overflow: hidden;
     position: fixed;
     left: 0;
-    top: 0;   
+    top: 0;
     width: 280px;
     height: 100%;
     z-index: 8;
-    transition: transform 0.5s;    
+    transition: transform 0.5s;
     background-color: #fff;
     &--closed {
       transform: translateX(-100%);
@@ -55,7 +55,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: transform 0.5s;   
+    transition: transform 0.5s;
   }
   &__logo {
     padding: 20px 21px 8px;
@@ -217,7 +217,7 @@
     &__logo {
       padding: 0;
       padding-right: 50px;
-      height: 18px;      
+      height: 18px;
       position: relative;
       &::after {
         content: "";
@@ -275,14 +275,15 @@
         opacity: 0.5;
       }
     }
-  }
-  &-fix .header__order {
-    display: none;
-  }
-  &-fix .header__phone-wrapper {
-    display: block;
-  }
-  &-fix .menu__link-fix {
-    display: none;
+
+    &-fix .header__order {
+      display: none;
+    }
+    &-fix .header__phone-wrapper {
+      display: block;
+    }
+    &-fix .menu__link-fix {
+      display: none;
+    }
   }
 }
