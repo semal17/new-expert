@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <style>html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}a{background-color:transparent}img{border-style:none}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button{overflow:visible}button{text-transform:none}button,[type="button"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring{outline:1px dotted ButtonText}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}@font-face{font-family:'Montserrat';src:url("../fonts/Montserrat-Regular.woff2") format("woff2"),url("../fonts/Montserrat-Regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'Montserrat';src:url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),url("../fonts/Montserrat-SemiBold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:'Montserrat';src:url("../fonts/Montserrat-Bold.woff2") format("woff2"),url("../fonts/Montserrat-Bold.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}html{-webkit-box-sizing:border-box;box-sizing:border-box}*{padding:0;margin:0;border:0}button{font-family:inherit}nav,header{display:block}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}a{text-decoration:none;color:inherit}ul,li{list-style:none;margin:0;padding:0}p{margin:0}h1,h2,h3{margin:0;font-size:inherit}body{color:#000000;font-family:"Montserrat",Helvetica,Arial,sans-serif;font-weight:400;font-style:16px;line-height:28px;background-color:#ffffff;position:relative;overflow-x:hidden}.title{font-size:36px;line-height:44px;font-weight:700}.container{min-width:320px;width:90%;padding:0 16px;margin:0 auto;position:relative}@media (min-width:1130px){.container{min-width:1130px;padding:0 30px;width:1130px}}.header{width:100%;height:56px}.header__wrapper{overflow:hidden;position:fixed;left:0;top:0;width:280px;height:100%;z-index:8;background-color:#fff}.header__wrapper--closed{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%)}.header__wrapper-scroll{position:fixed;left:0;top:0;min-height:568px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.header__top-wrapper{position:fixed;top:0;left:0;z-index:8;width:100%;height:56px;-webkit-box-shadow:0px 4px 4px rgba(0,0,0,0.25);box-shadow:0px 4px 4px rgba(0,0,0,0.25);background-color:#fff}.header__top{width:80%;margin:0 auto;min-height:56px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__logo{padding:20px 21px 8px}.header__btn{width:20px;height:14px;background-color:transparent;position:relative;outline:none}.header__btn-line{position:absolute;width:20px;height:2px;background-color:#425A7D;top:0;left:0;-webkit-box-shadow:0 6px 0 0 #425A7D,0 12px 0 0 #425A7D;box-shadow:0 6px 0 0 #425A7D,0 12px 0 0 #425A7D;border-radius:3px}.header__phone-top{height:24px}.header__phone-img{fill:none;stroke:#425A7D}.header__logo-top{width:115px;height:18px}.header__contacts{padding-top:37px;background-color:#EEF3FA;width:100%;min-height:500px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__phone-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__phone-line{width:100%;height:1px;background-color:#9EA5B7}.header__phone{position:relative;font-size:16px;font-weight:700;width:777px;padding:0 10px;text-align:center}.header__order{width:210px;font-size:14px;font-weight:600;padding:16px 28px;border-radius:6px;background-color:#E81E1E;color:white;text-transform:uppercase;margin-top:50px}@media (min-width:1130px){.header{min-height:80px;position:fixed;background-color:#fff;z-index:7}.header__wrapper{position:relative;background-color:transparent;width:100%;min-height:80px;-webkit-transform:translateX(0%);-ms-transform:translateX(0%);transform:translateX(0%)}.header__wrapper-scroll{min-height:80px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.header__top-wrapper{display:none}.header__logo{padding:0;padding-right:50px;height:18px;position:relative}.header__logo::after{content:"";position:absolute;height:28px;width:1px;background-color:#9EA5B7;top:-5px;right:20px}.header__contacts{padding-top:0;background-color:white;width:200px;min-height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__contacts{width:174px}.header__phone-wrapper{display:none}.header__phone{width:100%}.header__phone-line{display:none}.header__order{width:100%;font-size:14px;font-weight:600;padding:4px 12px;border-radius:4px;background-color:transparent;border:2px solid #E81E1E;color:red;text-transform:uppercase;margin-top:0}}.menu{padding-bottom:85px;width:100%}.menu__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;height:100%;width:100%;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.menu__item{width:100%}.menu__link{padding-left:17px;padding-right:10px;font-size:22px;font-weight:600;line-height:30px;width:100%;min-height:57px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.menu__link-lang{position:absolute;top:14px;right:17px;width:43px;min-height:16px;font-size:14px;font-weight:700;text-transform:uppercase;padding:0}.menu__link-lang::after{content:"";position:absolute;top:12px;right:0;width:16px;height:16px;background-image:url("../images/Vector.svg");background-repeat:no-repeat}@media (min-width:1130px){.menu{padding-bottom:0px;width:730px}.menu__list{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:80px;width:auto;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.menu__item{width:auto;height:100%}.menu__link{padding-left:15px;padding-right:12px;font-size:14px;font-weight:700;text-transform:uppercase;min-height:80px}.menu__link-lang{position:relative;top:0;right:0;font-size:14px;font-weight:700;padding-left:10px;padding-right:10px;min-height:80px}.menu__link-lang::after{top:36px;right:-7px}}.intro{padding-top:32px}.intro__description{width:100%;margin:0 auto}.intro__heading{font-size:30px;line-height:42px;font-weight:700;text-align:center}.intro__heading-red{color:#E81E1E}.intro__text{font-size:14px;line-height:28px;padding:30px 0 40px;text-align:center}.intro__order{display:block;margin:0 auto;width:205px;font-size:16px;font-weight:700;padding:13px 16px;border-radius:6px;background-color:#E81E1E;color:white;text-transform:uppercase;border:2px solid #E81E1E;-webkit-box-shadow:0px 4px 4px rgba(0,0,0,0.25);box-shadow:0px 4px 4px rgba(0,0,0,0.25)}.intro__present{display:block;width:112px;margin:0 auto;padding:35px 0 35px;font-size:16px;font-weight:700;text-transform:uppercase;color:#425A7D;position:relative}.intro__present::before{content:"";position:absolute;top:35px;left:-25px;width:20px;height:20px;background-image:url("../images/present.svg");background-repeat:no-repeat}.intro__img{display:block;margin:0 auto}.intro__set{padding:40px 0 20px}.intro__set-wrapper{padding-bottom:20px}.intro__set-link{display:block;height:110px;width:288px;margin:0 auto;color:#9EA5B7;border:2px solid #9EA5B7;border-radius:14px;position:relative}.intro__set-link--active{color:black;fill:#E81E1E;border:2px solid #E81E1E;-webkit-box-shadow:0px 4px 4px rgba(0,0,0,0.25);box-shadow:0px 4px 4px rgba(0,0,0,0.25)}.intro__set-heading{display:block;font-size:14px;line-height:20px;text-transform:uppercase;font-weight:700;width:100px;position:absolute;top:28px;left:22px}.intro__set-img{fill:#9EA5B7;stroke:#9EA5B7;position:absolute;bottom:0;right:0}.intro__set-img--active{fill:#E81E1E;stroke:#E81E1E}@media (min-width:1130px){.intro{padding-top:120px}.intro__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.intro__description{width:435px}.intro__heading{font-size:48px;line-height:56px;font-weight:700;text-align:left;width:100%}.intro__text{font-size:18px;line-height:28px;width:350px;padding:40px 0 70px;text-align:left}.intro__links{width:470px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.intro__order{margin:0}.intro__set{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:100px 0 50px}.intro__set-wrapper{padding-bottom:20px;width:338px;margin-right:27px}.intro__set-wrapper:nth-child(3n){margin-right:0}.intro__set-link{height:110px;width:100%}}.settings__img{display:block;margin:0 auto}.settings__text{font-size:16px;line-height:28px;text-align:left;padding:21px 0 36px;width:300px}@media (min-width:1130px){.settings__main{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:200px}.settings__ad{width:484px;padding-top:60px}.settings__text{font-size:18px;line-height:28px;text-align:left;padding:40px 0 60px;width:100%}}.slider__item-wrapper{padding:40px 0;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.slider__title{width:150px;font-size:24px;line-height:30px;font-weight:600;padding-left:44px}.slider__title--company{padding-left:12px}.slider__images-wrapper{position:relative}.slider__images-block{position:absolute;width:320px;margin-left:-16px;height:175px;background-color:#3c4d5d}.slider__images-btn{position:absolute;top:50%;left:50%;width:48px;height:48px;background-color:rgba(255,255,255,0.5);border-radius:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);outline:none}.slider__images-btn::after{position:absolute;content:"";background-image:url("../images/play.svg");background-repeat:no-repeat;background-position:center;width:15px;height:15px;top:17px;left:17px}@media (min-width:1130px){.slider__item-wrapper{display:none}.slider__title{width:150px;font-size:24px;line-height:30px;font-weight:600;padding-left:44px}.slider__title--company{padding-left:44px}.slider__images-wrapper{display:none}.slider__images-block{position:absolute;width:350px;margin-left:-20px;height:175px;background-color:#3c4d5d}.slider__images-btn{position:absolute;top:50%;left:50%;width:48px;height:48px;background-color:#fff;opacity:0.5;border-radius:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);outline:none}.slider__images-btn::after{position:absolute;content:"";background-image:url("../images/play.svg");background-repeat:no-repeat;background-position:center;width:15px;height:15px;top:0;left:0;opacity:1}}.form__select-item{color:#425A7D}.price__nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.price__nav-button{width:48px;height:48px;border-radius:50%;background-color:white;position:relative;outline:none}.price__nav-button::before{content:"";position:absolute;top:19px;left:21px;width:15px;height:15px;background-image:url("../images/price-button.svg");background-repeat:no-repeat}.price__nav-wrapper{width:100px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.price__nav-circle{width:8px;height:8px;border-radius:50%;background-color:#9EA5B7}.price__nav-circle--active{background-color:#E81E1E}.price__nav-button--right::before{background-image:url("../images/price-button-right.svg");background-repeat:no-repeat}@media (min-width:1130px){.price__mobile{display:none}.price__title{padding:25px 0 35px}.price__nav{display:none}}</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ExpertTarget PR Компания</title>
+    <link
+      rel="preload"
+      href="fonts/Montserrat-Regular.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Montserrat-Bold.woff2"
+      as="font"
+      crossorigin
+    />
+    <link rel="preload" href="css/style.min.css" as="style" crossorigin/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top-wrapper">
+        <div class="header__top">
+          <button type="button" class="header__btn">
+            <span class="header__btn-line"></span>
+          </button>
+          <a href="index.html" class="header__logo-top">
+            <img src="images/logo.svg" alt="Логотип ExpertTarget"/>
+          </a>
+          <a class="header__phone-top" href="tel:+70000000000">
+            <svg class="header__phone-img" width="24px" height="24px">
+              <use xlink:href="images/sprites.svg#phone"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+        <div class="header__wrapper header__wrapper--closed">
+          <div class="header__wrapper-scroll">
+          <a href="index.html" class="header__logo">
+            <img src="images/logo.svg" alt="Логотип ExpertTarget" />
+          </a>          
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="index.html" class="menu__link menu__link-fix"
+                  >Контекстная реклама</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link-fix">Соцсети</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link-fix">СМИ</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Наши клиенты</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link-lang">Ru</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <div class="header__phone-wrapper">
+              <span class="header__phone-line"></span>
+          <a class="header__phone" href="tel:+70000000000">+7 000 000 00 00</a>
+          <span class="header__phone-line"></span>
+        </div>
+          <a class="header__order" href="#">Оформить заказ</a>
+        </div>
+      </div>
+      </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <div class="container">
+          <div class="intro__wrapper">
+            <div class="intro__description">
+              <h1 class="intro__heading">
+                <span class="intro__heading-red">Ваш компас</span> <br />в мире
+                рекламы
+              </h1>
+              <p class="intro__text">
+                Команда ExpertTarget поможет вам провести эффективную рекламную
+                компанию вашего бизнеса.
+              </p>
+              <div class="intro__links">
+                <a class="intro__order" href="#">Оформить заказ</a>
+                <a href="#" class="intro__present">Презентация</a>
+              </div>
+            </div>
+            <div class="intro__picture">
+              <picture class="intro__images">
+                <source srcset="images/intro-desktop@1x.webp 1x,
+                images/intro-desktop@2x.webp 2x" media="(min-width: 1130px)" type="image/webp">
+                <source
+                  media="(min-width:1130px)"
+                  srcset="images/intro-desktop@1x.png 1x,
+                  images/intro-desktop@2x.png 2x"
+                />
+                <source srcset=" images/intro-mobile@1x.webp 1x, 
+                images/intro-mobile@2x.webp 2x" type="image/webp">
+                <img
+                  class="intro__img"                  
+                  src="images/intro-mobile@1x.png"
+                  srcset="images/intro-mobile@2x.png 2x"
+                  alt="Парусник у маяка"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="intro__set">
+            <div class="intro__set-wrapper">
+              <a href="index.html" class="intro__set-link">
+                <span class="intro__set-heading">Контекстная реклама</span>
+                <svg class="intro__set-img" width="288" height="108">
+                  <use xlink:href="images/sprites.svg#set1"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="intro__set-wrapper">
+              <a href="social.html" class="intro__set-link">
+                <span class="intro__set-heading">Социальные сети</span>
+                <svg class="intro__set-img" width="275" height="108">
+                  <use xlink:href="images/sprites.svg#set2"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="intro__set-wrapper">
+              <a href="company.html" class="intro__set-link intro__set-link--active">
+                <span class="intro__set-heading">PR Компания</span>
+                <svg class="intro__set-img intro__set-img--active" width="267" height="108">
+                  <use xlink:href="images/sprites.svg#set3"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings">
+        <div class="container">
+          <div class="settings__main">
+            <div class="settings__picture">
+              <picture class="settings__images">
+                <source
+                  media="(min-width:1130px)"
+                  srcset="images/2settings-desktop@1x.png 1x,
+                  images/2settings-desktop@2x.png 2x"
+                />
+                <img
+                  class="settings__img"
+                  src="images/2settings-mobile@1x.png"
+                  srcset="images/2settings-mobile@2x.png 2x"
+                  alt="СМИ"
+                />
+              </picture>
+            </div>
+            <div class="settings__ad">
+              <h2 class="settings__title title">
+                Мы сделаем вашу компанию известной
+              </h2>
+              <p class="settings__text">
+                Быстро и качественно проводим PR компании в СМИ. Огромный выбор изданий: от дешевых до самых престижных
+              </p>
+              <a href="" class="settings__save">pdf прайс</a>
+            </div>
+          </div>
+          <div class="settings__wrapper">
+            <div class="settings__price">
+              <h3 class="settings__price-heading">Стоимость от</h3>
+              <p class="settings__price-figure settings__price-figure--company">
+                1000<span class="settings__price-ru">Руб.</span>
+              </p>
+              <p class="settings__price-text settings__price-text--company">
+                за размещение
+пресс-релиза в 1 издании
+              </p>
+              <p class="settings__price-pick">
+                Всего на выбор имеется более 1000 площадок различных тематик.
+              </p>
+            </div>
+            <div class="settings__sources">
+              <div class="settings__scroll">
+                <button type="button" class="settings__btn settings__btn--up"></button>
+                <button type="button" class="settings__btn settings__btn--down"></button>
+                <span class="settings__scrolling"></span>
+              </div>
+              <div class="settings__social">
+                <ul class="settings__social-list">
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/klerk@1x.png"
+                        srcset="images/klerk@2x.png 2x"
+                        alt="Логотип Клерк"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 6000 руб.</span>
+                    </a>
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/em@1x.png"
+                        srcset="images/em@2x.png 2x"
+                        alt="Логотип Вечерняя Москва"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 9500 руб.</span>
+                    </a>
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/interfax@1x.png"
+                        srcset="images/interfax@2x.png 2x"
+                        alt="Логотип ИНТЕРФАКС"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 60000 руб.</span>
+                    </a>
+                    
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/km@1x.png"
+                        srcset="images/km@2x.png 2x"
+                        alt="Логотип KM.RU"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 5500 руб.</span>
+                    </a>
+                    
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/drive@1x.png"
+                        srcset="images/drive@2x.png 2x"
+                        alt="Логотип Драйв2"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 25000 руб.</span>
+                    </a>
+                    
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/bankiru@1x.png"
+                        srcset="images/bankiru@2x.png 2x"
+                        alt="Логотип Банки ру"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 150000 руб.</span>
+                    </a>
+                    
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/klerk@1x.png"
+                        srcset="images/klerk@2x.png 2x"
+                        alt="Логотип Клерк"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 6000 руб.</span>
+                    </a>
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/em@1x.png"
+                        srcset="images/em@2x.png 2x"
+                        alt="Логотип Вечерняя Москва"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 9500 руб.</span>
+                    </a>
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/interfax@1x.png"
+                        srcset="images/interfax@2x.png 2x"
+                        alt="Логотип ИНТЕРФАКС"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 60000 руб.</span>
+                    </a>
+                    
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/km@1x.png"
+                        srcset="images/km@2x.png 2x"
+                        alt="Логотип KM.RU"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 5500 руб.</span>
+                    </a>
+                    
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/drive@1x.png"
+                        srcset="images/drive@2x.png 2x"
+                        alt="Логотип Драйв2"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 25000 руб.</span>
+                    </a>
+                    
+                  </li>
+                  <li class="settings__social-item">
+                    <a href="#" class="settings__social-link">
+                      <img
+                        src="images/bankiru@1x.png"
+                        srcset="images/bankiru@2x.png 2x"
+                        alt="Логотип Банки ру"
+                        class="settings__social-img"
+                      />
+                      <span class="settings__social-text">От 150000 руб.</span>
+                    </a>
+                    
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider slider-company">
+        <div class="container">
+          <h2 class="slider__heading slider__heading--company  title">
+            Наши возможности
+в проведении PR компаний
+          </h2>
+          <ul class="slider__list-top">
+            <li class="slider__item-top">
+              <div class="slider__item-wrapper-top">
+                <img
+                  src="images/sl6@1x.png"
+                  srcset="images/sl6@2x.png 2x"
+                  alt="Электронные
+                  Сми"
+                  class="slider__logo-top"
+                  width="100"
+                  height="100"
+                />
+                <h3 class="slider__title-top slider__title-top--active">Электронные
+                    Сми</h3>
+                <span class="slider__line-top slider__line-top--active"></span>
+              </div>                
+            </li>
+            <li class="slider__item-top">
+              <div class="slider__item-wrapper-top">
+                <img
+                  src="images/sl7@1x.png"
+                  srcset="images/sl7@2x.png 2x"
+                  alt="Печатные
+                  издания"
+                  class="slider__logo-top"
+                  width="100"
+                  height="100"
+                />
+                <h3 class="slider__title-top">Печатные
+                    издания</h3>
+                <span class="slider__line-top"></span>
+              </div>                
+            </li>
+            <li class="slider__item-top">
+              <div class="slider__item-wrapper-top">
+                <img
+                  src="images/sl8@1x.png"
+                  srcset="images/sl8@2x.png 2x"
+                  alt="Написание
+                  PR текстов"
+                  class="slider__logo-top"
+                  width="100"
+                  height="100"
+                />
+                <h3 class="slider__title-top">Написание
+                    PR текстов</h3>
+                <span class="slider__line-top"></span>
+              </div>                
+            </li>
+            <li class="slider__item-top">
+              <div class="slider__item-wrapper-top">
+                <img
+                  src="images/sl9@1x.png"
+                  srcset="images/sl9@2x.png 2x"
+                  alt="Пакетное
+                  размещение"
+                  class="slider__logo-top"
+                  width="100"
+                  height="100"
+                />
+                <h3 class="slider__title-top">Пакетное
+                    размещение</h3>
+                <span class="slider__line-top"></span>
+                </div>                
+            </li>
+            <li class="slider__item-top">
+              <div class="slider__item-wrapper-top">
+                <img
+                  src="images/sl10@1x.png"
+                  srcset="images/sl10@2x.png 2x"
+                  alt="Персона "
+                  class="slider__logo-top"
+                  width="100"
+                  height="100"
+                />
+                <h3 class="slider__title-top">Персона</h3>
+                <span class="slider__line-top"></span>
+              </div>                
+            </li>
+          </ul>
+          <ul class="slider__list">
+            <li class="slider__item">
+                <div class="slider__item-wrapper">
+                    <img
+                      src="images/sl6@1x.png"
+                      srcset="images/sl6@2x.png 2x"
+                      alt="Электронные
+                      Сми"
+                      class="slider__logo"
+                      width="100"
+                      height="100"
+                    />
+                    <h3 class="slider__title slider__title--company">Электронные
+                        Сми</h3>                    
+                  </div>                
+              <p class="slider__text slider__text--company">
+                Учитывая Вашу целевую аудиторию, мы разработаем грамотный медиаплан, в который войдет: реклама на ТВ,
+на радио, в печатной прессе и электронных СМИ, а также размещение рекламы в лифтах жилых домов
+и на стендах бизнес-центров.                
+              </p>
+            </li>
+            <li class="slider__item">
+                <div class="slider__item-wrapper">
+                    <img
+                      src="images/sl7@1x.png"
+                      srcset="images/sl7@2x.png 2x"
+                      alt="Печатные
+                      издания"
+                      class="slider__logo"
+                      width="100"
+                      height="100"
+                    />
+                    <h3 class="slider__title">Печатные
+                        издания</h3>                    
+                  </div>             
+              <div class="slider__images">
+                <h4 class="slider__user">
+                  117 <span class="slider__user--red">МЛН</span>
+                </h4>
+                <p class="slider__user-text">Пользователей в 2019 году</p>
+              </div>
+              <p class="slider__text">
+                Поисковые системы и социальные сети посещают миллионы людей
+                ежедневно. Не упускайте возможность найти ваших клиентов среди
+                интернет пользователей. Контекстная реклама подходит как мелкому
+                так и крупному бизнесу.
+              </p>
+            </li>
+            <li class="slider__item slider__item-third">
+                <div class="slider__item-wrapper">
+                    <img
+                      src="images/sl8@1x.png"
+                      srcset="images/sl8@2x.png 2x"
+                      alt="Написание
+                      PR текстов"
+                      class="slider__logo"
+                      width="100"
+                      height="100"
+                    />
+                    <h3 class="slider__title">Написание
+                        PR текстов</h3>
+                    
+                  </div>                    
+              <picture class="slider__images">
+                <source media="(min-width:1130px)" srcset="images/sld-3@1x.png 1x, images/sld-3@2x.png 2x" />
+                <img
+                  class="slider__img"
+                  src="images/slm-3@1x.png"
+                  srcset="images/slm-3@2x.png 2x"
+                  alt="Изображение карты"
+                />
+              </picture>
+              <p class="slider__text slider__text-third">
+                Показывайте ваши объявления людям, которые проживают в нужных
+                регионах или посещают определенные места. Возможно задавать
+                Страны, конкретные города, улицы и даже любую точку или место на
+                карте. Что позволяет находить ближайших клиентов к вашему
+                бизнесу.
+              </p>
+            </li>
+            <li class="slider__item">
+                <div class="slider__item-wrapper">
+                    <img
+                      src="images/sl9@1x.png"
+                      srcset="images/sl9@2x.png 2x"
+                      alt="Пакетное
+                      размещение"
+                      class="slider__logo"
+                      width="100"
+                      height="100"
+                    />
+                    <h3 class="slider__title slider__title--company">Пакетное
+                        размещение</h3>
+                    
+                    </div>      
+              <img
+                class="slider__images slider__images--none"
+                src="images/sld-4@1x.png"
+                srcset="images/sld-4@2x.png 2x"
+                alt="Изображение экрана телефона"
+              />
+              <div class="slider__images-wrapper">
+                <div class="slider__images-block">
+                  <a class="slider__images-btn" href="#"></a>
+                </div>
+              </div>
+              <p class="slider__text slider__text-top">
+                Медиайная реклама поможет подробно и быстро рассказать о вашем
+                продукте или услуги. Возможно размещать баннера и целые
+                видеоролики. Такая реклама не останется не замеченной.
+              </p>
+            </li>
+            <li class="slider__item">
+                <div class="slider__item-wrapper">
+                    <img
+                      src="images/sl10@1x.png"
+                      srcset="images/sl10@2x.png 2x"
+                      alt="Персона"
+                      class="slider__logo"
+                      width="100"
+                      height="100"
+                    />
+                    <h3 class="slider__title">Персона</h3>
+                    
+                  </div> 
+              <picture class="slider__images">
+                <source media="(min-width:1130px)" srcset="images/sld-5@1x.png 1x, images/sld-5@2x.png 2x" />
+                <img
+                  class="slider__img"
+                  src="images/slm-5@1x.png"
+                  srcset="images/slm-5@2x.png 2x"
+                  alt="Покупка оформлена"
+                />
+              </picture>
+              <p class="slider__text">
+                Возможно настроить рекламные компании так, что вы будете платить
+                не за клики или показы, а конкретно за результат. Например,
+                оформленный заказ на вашем сайте, регистрацию, прохождение
+                опроса, заполнение различных форм и.т.д. Данный вид рекламы
+                требует профессиональных знаний и тонкой настройки. Наши
+                специалисты с радостью помогут вам!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="price">
+          <div class="container">
+              <div class="price__mobile">
+                <svg class="price__img" width="48" height="48">
+                    <use xlink:href="images/sprites.svg#price"></use>
+                  </svg>
+                  <h2 class="price__title title">Тарифы
+                    на PR услуги</h2>
+              </div>
+
+              <div class="price__wrapper">
+                  <ul class="price__list">
+                      <li class="price__item price__desktop">
+                        <svg class="price__img" width="48" height="48">
+                            <use xlink:href="images/sprites.svg#price"></use>
+                          </svg>
+                          <h2 class="price__title title">Тарифы
+                            на PR услуги</h2>
+            <a href="#" class="price__text">Показать все</a>
+                      </li>
+                      <li class="price__item">
+                          <div class="price__intro">
+                              <h4 class="price__intro-heading">Пакет «Пробный»</h4>
+                              <ul class="price__intro-list">
+                                  <li class="price__intro-item">
+                                      <p class="price__intro-text">Поможем настроить комплексное</p>
+                                  </li>
+                                  <li class="price__intro-item">
+                                      <p class="price__intro-text">продвижение в Instagram –</p>
+                                  </li>
+                                  <li class="price__intro-item">
+                                      <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                                  </li>
+                                  <li class="price__intro-item">
+                                      <p class="price__intro-text">посты, реклама.</p>
+                                  </li>
+                              </ul>
+                              <div class="price__intro-wrapper">
+                                <span class="price__intro-figure">
+                                    5 000 руб.</span>
+                                <a href="#" class="price__intro-link">Подробнее</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="price__item">
+                          <div class="price__intro">
+                              <h4 class="price__intro-heading">Пакет «Легкий старт»</h4>
+                              <ul class="price__intro-list">
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">Поможем настроить комплексное</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">продвижение в Instagram –</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">посты, реклама.</p>
+                                </li>
+                            </ul>
+                              <div class="price__intro-wrapper">
+                                <span class="price__intro-figure">
+                                    15 000 руб.</span>
+                                <a href="#" class="price__intro-link">Подробнее</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="price__item">
+                          <div class="price__intro">
+                              <h4 class="price__intro-heading">Пакет «Стартап»</h4>
+                              <ul class="price__intro-list">
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">Поможем настроить комплексное</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">продвижение в Instagram –</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">посты, реклама.</p>
+                                </li>
+                            </ul>
+                              <div class="price__intro-wrapper">
+                                <span class="price__intro-figure">
+                                    30 000 руб.</span>
+                                <a href="#" class="price__intro-link">Подробнее</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="price__item">
+                          <div class="price__intro">
+                              <h4 class="price__intro-heading">Пакет «Бизнес»</h4>
+                              <ul class="price__intro-list">
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">Поможем настроить комплексное</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">продвижение в Instagram –</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">посты, реклама.</p>
+                                </li>
+                            </ul>
+                              <div class="price__intro-wrapper">
+                                <span class="price__intro-figure">
+                                    55 000 руб.</span>
+                                <a href="#" class="price__intro-link">Подробнее</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="price__item">
+                          <div class="price__intro">
+                              <h4 class="price__intro-heading">Пакет «ПРО»</h4>
+                              <ul class="price__intro-list">
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">Поможем настроить комплексное</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">продвижение в Instagram –</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">посты, реклама.</p>
+                                </li>
+                            </ul>
+                              <div class="price__intro-wrapper">
+                                <span class="price__intro-figure">
+                                    300 000 руб.</span>
+                                <a href="#" class="price__intro-link">Подробнее</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="price__item">
+                        <div class="price__intro">
+                            <h4 class="price__intro-heading">Пакет «Пробный»</h4>
+                            <ul class="price__intro-list">
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">Поможем настроить комплексное</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">продвижение в Instagram –</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                                </li>
+                                <li class="price__intro-item">
+                                    <p class="price__intro-text">посты, реклама.</p>
+                                </li>
+                            </ul>
+                            <div class="price__intro-wrapper">
+                              <span class="price__intro-figure">
+                                  5 000 руб.</span>
+                              <a href="#" class="price__intro-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__intro">
+                            <h4 class="price__intro-heading">Пакет «Легкий старт»</h4>
+                            <ul class="price__intro-list">
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">Поможем настроить комплексное</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">продвижение в Instagram –</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">посты, реклама.</p>
+                              </li>
+                          </ul>
+                            <div class="price__intro-wrapper">
+                              <span class="price__intro-figure">
+                                  15 000 руб.</span>
+                              <a href="#" class="price__intro-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__intro">
+                            <h4 class="price__intro-heading">Пакет «Стартап»</h4>
+                            <ul class="price__intro-list">
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">Поможем настроить комплексное</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">продвижение в Instagram –</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">посты, реклама.</p>
+                              </li>
+                          </ul>
+                            <div class="price__intro-wrapper">
+                              <span class="price__intro-figure">
+                                  30 000 руб.</span>
+                              <a href="#" class="price__intro-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__intro">
+                            <h4 class="price__intro-heading">Пакет «Бизнес»</h4>
+                            <ul class="price__intro-list">
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">Поможем настроить комплексное</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">продвижение в Instagram –</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">посты, реклама.</p>
+                              </li>
+                          </ul>
+                            <div class="price__intro-wrapper">
+                              <span class="price__intro-figure">
+                                  55 000 руб.</span>
+                              <a href="#" class="price__intro-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__intro">
+                            <h4 class="price__intro-heading">Пакет «ПРО»</h4>
+                            <ul class="price__intro-list">
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">Поможем настроить комплексное</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">продвижение в Instagram –</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">оптимизация профиля, контент-план,</p>
+                              </li>
+                              <li class="price__intro-item">
+                                  <p class="price__intro-text">посты, реклама.</p>
+                              </li>
+                          </ul>
+                            <div class="price__intro-wrapper">
+                              <span class="price__intro-figure">
+                                  300 000 руб.</span>
+                              <a href="#" class="price__intro-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+              </div>  
+                   <div class="price__nav">
+                       <button type="button" class="price__nav-button price__nav-button--left"></button>
+                       <div class="price__nav-wrapper">
+                           <span class="price__nav-circle price__nav-circle--active"></span>
+                           <span class="price__nav-circle"></span>
+                           <span class="price__nav-circle"></span>
+                           <span class="price__nav-circle"></span>
+                           <span class="price__nav-circle"></span>
+                       </div>
+                       <button type="button" class="price__nav-button price__nav-button--right"></button>
+                   </div>      
+          </div>
+      </section>
+
+      <section class="advantegs advantegs-company">
+        <div class="container">
+          <div class="advantegs__wrapper">
+            <div class="advantegs__main">
+              <h2 class="advantegs__title title">Наши преимущества</h2>
+              <a href="#" class="advantegs__link">Узнать больше</a>
+              <img
+                src="images/advan@1x.png"
+                srcset="images/advan@2x.png 2x"
+                alt="Супермен"
+                class="advantegs__img"
+              />
+            </div>
+            <div class="advantegs__united">
+              <div class="advantegs__scroll-wrapper">
+                <div class="advantegs__scroll">
+                  <span class="advantegs__scroll-circle"></span>
+                  <span class="advantegs__scroll-line"></span>
+                </div>
+                <div class="advantegs__scroll-figure">
+                  <p class="advantegs__scroll-number advantegs__scroll-first">
+                    01<span class="advantegs__scroll-part"> / 05</span>
+                  </p>
+                  <p class="advantegs__scroll-number advantegs__scroll-second">
+                    02<span class="advantegs__scroll-part"> / 05</span>
+                  </p>
+                  <p class="advantegs__scroll-number advantegs__scroll-third">
+                    03<span class="advantegs__scroll-part"> / 05</span>
+                  </p>
+                  <p class="advantegs__scroll-number advantegs__scroll-fourth">
+                    04<span class="advantegs__scroll-part"> / 05</span>
+                  </p>
+                  <p class="advantegs__scroll-number advantegs__scroll-fifth">
+                    05<span class="advantegs__scroll-part"> / 05</span>
+                  </p>
+                </div>
+              </div>
+              <div class="advantegs__column">
+                <ul class="advantegs__list">
+                  <li class="advantegs__item">
+                    <div class="advantegs__item-wrapper">
+                      <img
+                        src="images/adv6@1x.png"
+                        srcset="images/adv6@2x.png 2x"
+                        alt="Ракета"
+                        class="advantegs__item-img"
+                        width="100"
+                        height="100"/>                      
+                      <p class="advantegs__item-text">Бесплатное размещение ваших пресс-релизов в Яндекс Новости,
+                        Google News, Рамблер.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="advantegs__item">
+                    <div class="advantegs__item-wrapper">
+                      <img
+                        src="images/adv7@1x.png"
+                        srcset="images/adv7@2x.png 2x"
+                        alt="КОРАБЛЬ"
+                        class="advantegs__item-img"
+                        width="100"
+                        height="100"
+                      />
+                      <p class="advantegs__item-text">
+                        Подберем тематические площадки для вашего вида бизнеса.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="advantegs__item">
+                    <div class="advantegs__item-wrapper">
+                      <img
+                        src="images/adv8@1x.png"
+                        srcset="images/adv8@2x.png 2x"
+                        alt="График"
+                        class="advantegs__item-img"
+                        width="100"
+                        height="100"
+                      />
+                      <p class="advantegs__item-text">
+                        Проведение региональных PR компаний.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="advantegs__item">
+                    <div class="advantegs__item-wrapper">
+                      <img
+                        src="images/adv9@1x.png"
+                        srcset="images/adv9@2x.png 2x"
+                        alt="Консультант"
+                        class="advantegs__item-img"
+                        width="100"
+                        height="100"/>
+                      <p class="advantegs__item-text">
+                        Большой выбор изданий для размещения.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="advantegs__item">
+                    <div class="advantegs__item-wrapper">
+                      <img
+                        src="images/adv10@1x.png"
+                        srcset="images/adv10@2x.png 2x"
+                        alt="Этикетка скидки"
+                        class="advantegs__item-img"
+                        width="100"
+                        height="100"
+                      />
+                      <p class="advantegs__item-text">
+                        Вечное размещение статей с активными ссылками.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form">
+        <div class="container">
+          <picture class="form__picture">
+            <source media="(min-width:1130px)" srcset="images/formd@1x.png 1x, images/formd@2x.png 2x" />
+            <img
+              class="form__img"
+              src="images/formm@1x.png"
+              srcset="images/formm@2x.png 2x"
+              alt="Установка рекламного щита"
+            />
+          </picture>
+          <h2 class="form__title title">Найдите своих клиентов с нами</h2>
+          <p class="form__text">Не ждите, что клиенты узнают
+            о вашей ценности случайно.
+            С ExpertTarget запустить рекламу
+            под свой бизнес легко.
+            Проверьте ее эффективность сами.</p>
+            <a href="#" class="form__link">скачать полный прайс pdf</a>
+            <form class="form__form" action=#" method="POST">
+              <div class="form__wrapper">
+              <div class="form__select">
+                <select name="service" class="form__select-list">
+                  <option value="0" class="form__select-item" disabled selected>Тип услуги</option>
+                  <option value="1" class="form__select-item">Соцсети</option>
+                  <option value="2" class="form__select-item">Контекстная реклама</option>
+                  <option value="3" class="form__select-item">PR Компания</option>
+                </select>
+              </div>
+              <input type="text" name="contacts" class="form__input" placeholder="Ваш E-mail или номер телефона">
+              <button class="form__button" type="submit">Оформить Заказ</button>
+            </div>
+             <label class="form__checkbox-text">
+               <input type="checkbox" name="agree" class="form__checkbox">Согласие на обработку моих персональных данных.
+            <span class="form__checkbox-style"></span>
+          </label>               
+            </form>
+        </div>
+      </section>
+    </main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <a href="#" class="footer__logo">
+      <img src="images/logo.svg" alt="Логотип" class="footer__img">
+      </a>
+      <ul class="footer__products">
+        <li class="footer__product"><a href="social.html" class="footer__product-link">Соцсети</a></li>
+        <li class="footer__product footer__product-second"><a href="index.html" class="footer__product-link">Контекстная реклама</a></li>
+        <li class="footer__product"><a href="#" class="footer__product-link">PR Компания</a></li>
+      </ul>
+      <a class="footer__phone" href="tel:+70000000000">+7 000 000 00 00</a>
+    </div>
+    <div class="footer__social">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-picture" width="24px" height="24px">
+              <use xlink:href="images/sprites.svg#soc1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-picture" width="24px" height="24px">
+              <use xlink:href="images/sprites.svg#soc2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-picture" width="24px" height="24px">
+              <use xlink:href="images/sprites.svg#soc3"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-picture" width="24px" height="24px">
+              <use xlink:href="images/sprites.svg#soc4"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-picture" width="24px" height="24px">
+              <use xlink:href="images/sprites.svg#soc5"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-picture" width="24px" height="24px">
+              <use xlink:href="images/sprites.svg#soc6"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-picture" width="24px" height="24px">
+              <use xlink:href="images/sprites.svg#soc7"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">© ExpertTarget, 2019. Designed by Alex Burenin</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

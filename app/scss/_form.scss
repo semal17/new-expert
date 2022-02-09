@@ -1,0 +1,222 @@
+.form {
+  background-color: #fefefe;
+  position: relative;
+  margin-bottom: 50px;
+  &__picture {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  &__title {
+    padding: 70px 0 50px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+  }
+  &__text {
+    text-align: center;
+    padding: 0 5px;
+  }
+  &__link {
+    display: block;
+    position: relative;
+    width: 280px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $blue;
+    text-align: center;
+    font-weight: 700;
+    padding-left: 40px;
+    margin: 40px auto;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/present.svg");
+      background-repeat: no-repeat;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__select-item {
+    color: $blue;
+}
+  &__select-list {
+      cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    width: 288px;
+    height: 54px;
+    border: 2px solid #cfd6e6;
+    border-radius: 6px;
+    padding: 10px 10px;
+    outline: none;
+    color: $grey;
+    appearance: none;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 7px;
+      height: 14px;     
+      background-image: url("../images/select.svg");
+      background-repeat: no-repeat;
+    }
+    &:focus {
+      border: 2px solid $blue;
+    }
+  }
+  &__input {
+    display: block;
+    width: 288px;
+    height: 54px;
+    border: 2px solid #cfd6e6;
+    border-radius: 6px;
+    padding: 10px 0 10px 10px;
+    margin: 20px auto 36px;
+    outline: none;
+    color: $grey;
+    &:focus {
+      border: 2px solid $blue;
+    }
+    &::-webkit-input-placeholder {
+      color: $grey;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 0 auto 48px;
+    width: 245px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 16px;
+    border-radius: 6px;
+    background-color: #e81e1e;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #e81e1e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      color: $red;
+      background-color: #fff;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__checkbox-text {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    padding-left: 50px;
+    display: block;
+    width: 288px;
+    margin: 0 auto;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 12px;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      border: 2px solid $red;
+      z-index: 2;
+    }
+  }
+  &__checkbox {
+    appearance: none;
+    &:checked + .form__checkbox-style::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 12px;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      border: 2px solid $red;
+      z-index: 3;
+      background-color: $red;      
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.25L4.5 8.5L12 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-position: center;
+    }
+  }
+}
+
+@media (min-width: 1130px) {
+  .form {
+    background-color: #F6F9FC;
+    position: relative;
+    margin-bottom: 0;
+    &__picture {
+      position: absolute;
+      top: -417px;
+      left: 120px;
+    }
+    &__title {
+      padding: 130px 0 40px;
+      margin: 0 auto;
+      font-size: 30px;
+    }
+    &__text {
+      text-align: center;
+      width: 517px;
+      margin: 0 auto;
+    }
+    &__link {
+      width: 330px;
+      font-size: 16px;
+      margin: 60px auto;      
+    }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 90px 50px;
+    }
+    &__select-list {
+      display: block;
+      width: 245px;
+    }
+        &__input {
+      display: block;
+      width: 335px;
+      margin: 0;
+    }
+    &__button {
+      margin: 0;
+      width: 245px;
+    }
+    &__checkbox-text {
+      padding-left: 50px;
+      padding-bottom: 80px;
+      width: 455px;
+      margin: 0 auto;      
+    }
+    &__checkbox {
+      &:checked + .form__checkbox-style::after {
+        top: 2px;
+        left: 12px;
+      }
+    }
+  }
+}

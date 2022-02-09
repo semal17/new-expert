@@ -1,0 +1,307 @@
+.slider {
+  padding: 0;
+  &-social {
+    margin: 0 0 40px;
+  }
+  &__list-top {
+    display: none;
+  }
+  &__item {
+    padding-bottom: 20px;
+  }
+  &__item-wrapper {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__title {
+    width: 150px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-left: 44px;
+  }
+  &__title--company {
+    padding-left: 12px;
+  }
+  &__img {
+    padding-bottom: 27px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 28px;
+    padding-right: 10px;
+  }
+  &__user {
+    font-size: 75px;
+    font-family: "BebasNeue", sans-serif;
+    line-height: 1;
+    color: $red;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &__user--red {
+    color: black;
+  }
+  &__user-text {
+    font-size: 20px;
+    color: #cfd6e6;
+    padding: 10px 0 20px;
+    text-align: left;
+  }
+  &__images--none {
+    display: none;
+  }
+  &__images-wrapper {
+    position: relative;
+  }
+  &__images-block {
+    position: absolute;
+    width: 320px;
+    margin-left: -16px;
+
+    height: 175px;
+    background-color: #3c4d5d;
+  }
+  &__text-top {
+    padding-top: 200px;
+  }
+  &__images-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.5);    
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    cursor: pointer;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../images/play.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 15px;
+      height: 15px;
+      top: 17px;
+      left: 17px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: 1130px) {
+  .slider {
+    margin: 200px 0;
+    height: 860px;
+    overflow: hidden;
+    &-company {
+      margin: 200px 0 50px;
+    }
+    &-social {
+      margin: 150px 0 30px;
+    }
+    &__heading {
+      width: 485px;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 92px;
+    }
+    &__heading--company {
+      width: 550px;
+    }
+    &__heading--social {
+      width: 650px;
+    }
+    &__list-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__title-top {
+      color: #3b4a6d;
+      opacity: 0.5;
+      padding: 23px 0;
+    }
+    &__title-top--active {
+      color: black;
+      opacity: 1;
+    }
+
+    &__item-top {
+      width: 20%;
+      cursor: pointer;
+    }
+    &__item-wrapper-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+      &:hover .slider__title-top {
+        color: black;
+        opacity: 1;
+      }
+      &:hover .slider__line-top {
+        background-color: $red;
+      }
+      &:focus .slider__line-top {
+        background-color: $red;
+      }
+      &:hover .slider__line-top::before {
+        width: 20px;
+        height: 20px;
+        border: 2px solid $red;
+        background-color: $red;
+      }
+    }
+
+    &__line-top {
+      width: 100%;
+      height: 2px;
+      background-color: $grey;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 50%;
+        border: 2px solid $grey;
+        background-color: #fff;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &__line-top--active {
+      background-color: $red;
+      &::before {
+        width: 20px;
+        height: 20px;
+        border: 2px solid $red;
+        background-color: $red;
+      }
+    }
+    &__item {
+      padding-bottom: 20px;
+      text-align: center;
+      min-height: 490px;
+    }
+    &__item-wrapper {
+      display: none;
+    }
+    &__title {
+      width: 150px;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 600;
+      padding-left: 44px;
+    }
+    &__title--company {
+      padding-left: 44px;
+    }
+    &__img {
+      padding: 86px 0 40px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 32px;
+      padding: 0 10px;
+      margin: 0 auto;
+      width: 880px;
+    }
+    &__text--company {
+      padding-top: 150px;
+      width: 600px;
+    }
+    &__user {
+      font-size: 144px;
+      text-align: center;
+      padding: 86px 0 0;
+    }
+    &__user--red {
+      color: black;
+    }
+    &__user-text {
+      font-size: 29px;
+      color: #cfd6e6;
+      padding: 40px 0 40px;
+      text-align: center;
+    }
+    &__images--none {
+      display: block;
+      margin: 0 auto;
+      padding: 86px 0 40px;
+    }
+    &__images-wrapper {
+      display: none;
+    }
+    &__images-block {
+      position: absolute;
+      width: 350px;
+      margin-left: -20px;
+      height: 175px;
+      background-color: #3c4d5d;
+    }
+    &__text-top {
+      padding-top: 0;
+    }
+    &__images-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 48px;
+      height: 48px;
+      background-color: #fff;
+      opacity: 0.5;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      outline: none;
+      cursor: pointer;
+      &::after {
+        position: absolute;
+        content: "";
+        background-image: url("../images/play.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        left: 0;
+        opacity: 1;
+      }
+    }
+    &__item-third {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__text-third {
+      width: 520px;
+      text-align: left;
+      padding: 120px 10px 0 38px;
+    }
+    &__text-right {
+      width: 540px;
+      text-align: left;
+      padding: 120px 10px 0 38px;
+    }
+    &__images-right {
+      padding-left: 200px;
+      padding-top: 30px;
+    }
+  }
+}

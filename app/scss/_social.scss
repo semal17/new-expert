@@ -1,0 +1,162 @@
+.social {
+  padding: 40px 0 70px;
+  &__heading {
+    padding: 10px 0 20px;
+  }
+  &__text {
+    font-size: 18px;
+    padding-right: 10px;
+  }
+
+  &__save {
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $blue;
+    text-align: left;
+    font-weight: 700;
+    padding-left: 38px;
+    display: block;
+    margin: 30px 0 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/present.svg");
+      background-repeat: no-repeat;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__list {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    width: 245px;
+    height: 145px;
+    background-color: #f7f9fd;
+    margin-right: 30px;
+    border-radius: 14px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(0.93);
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__link-img {
+    display: block;
+  }
+
+  &__link-text {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $blue;
+    font-weight: 700;
+    padding: 20px 0 15px;
+  }
+  &__scroll {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: $grey;
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -16px;
+      width: 30%;
+      height: 2px;
+      background-color: $red;
+    }
+  }
+}
+
+@media (min-width: 1130px) {
+  .social {
+    padding: 30px 0 0;
+    &__images {
+      margin: 0 auto;
+      display: block;
+      width: 645px;
+    }
+    &__heading {
+      padding: 0;
+      width: 490px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 60px 0 30px;
+    }
+    &__text {
+      font-size: 18px;
+      text-align: center;
+      width: 340px;
+      margin: 0 auto;
+    }
+    &__save {
+      width: 150px;
+      margin: 60px auto 140px;
+    }
+    &__slider {
+      position: relative;
+    }
+
+    &__list {
+      display: flex;
+      overflow: hidden;
+    }
+    &__btn {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      top: 38px;
+      background-color: $red;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+      &:active {
+        opacity: 0.4;
+      }
+    }
+    &__btn--left {
+      left: -88px;
+      background-image: url("../images/left.svg");
+    }
+    &__btn--right {
+      right: -88px;
+      background-image: url("../images/right.svg");
+    }
+    &__scroll {
+      display: none;
+    }
+  }
+}

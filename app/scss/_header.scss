@@ -1,0 +1,288 @@
+.header {
+  width: 100%;
+  height: 56px;
+  &__wrapper {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;   
+    width: 280px;
+    height: 100%;
+    z-index: 8;
+    transition: transform 0.5s;    
+    background-color: #fff;
+    &--closed {
+      transform: translateX(-100%);
+    }
+    &--active {
+      transform: translateX(0%);
+      box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.36);
+      overflow: hidden;
+    }
+  }
+  &__wrapper-scroll {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 568px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  &__top-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    width: 100%;
+    height: 56px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s;
+    transition: width 0.5s;
+    background-color: #fff;
+    &--active {
+      transform: translateX(280px);
+      transition: transform 0.6s;
+      width: 160%;
+    }
+  }
+  &__top {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.5s;   
+  }
+  &__logo {
+    padding: 20px 21px 8px;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__btn {
+    width: 20px;
+    height: 14px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.4;
+    }
+  }
+  &__btn-line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: $blue;
+    top: 0;
+    left: 0;
+    box-shadow: 0 6px 0 0 $blue, 0 12px 0 0 $blue;
+    transition: transform 0.5s;
+    border-radius: 3px;
+  }
+  &__top-wrapper--active &__btn-line {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  &__top-wrapper--active &__btn-line::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: $blue;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    position: absolute;
+    border-radius: 3px;
+  }
+  &__top-wrapper--active &__top {
+    margin-left: 10px;
+    transition: width 0.5s;
+    width: 44%;
+  }
+  &__phone-top {
+    height: 24px;
+  }
+  &__phone-img {
+    fill: none;
+    stroke: $blue;
+    &:hover {
+      fill: $blue;
+    }
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  &__logo-top {
+    width: 115px;
+    height: 18px;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__contacts {
+    padding-top: 37px;
+    background-color: $sea;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__phone-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  &__phone-line {
+    width: 100%;
+    height: 1px;
+    background-color: $grey;
+  }
+  &__phone {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    width: 777px;
+    padding: 0 10px;
+    text-align: center;
+    transition: color 0.3s;
+    &:hover {
+      color: $red;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__order {
+    width: 210px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 28px;
+    border-radius: 6px;
+    background-color: $red;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 50px;
+    &:hover {
+      color: $red;
+      background-color: #fff;
+      border: 2px solid $red;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (min-width: 1130px) {
+  .header {
+    min-height: 80px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 7;
+    &__wrapper {
+      position: relative;
+      background-color: transparent;
+      width: 100%;
+      min-height: 80px;
+      transform: translateX(0%);
+    }
+    &__wrapper-scroll {
+      min-height: 80px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+    &__top-wrapper {
+      display: none;
+    }
+    &__logo {
+      padding: 0;
+      padding-right: 50px;
+      height: 18px;      
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 28px;
+        width: 1px;
+        background-color: $grey;
+        top: -5px;
+        right: 20px;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+    }
+    &__contacts {
+      padding-top: 0;
+      background-color: white;
+      width: 200px;
+      min-height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    &__contacts {
+      width: 174px;
+    }
+    &__phone-wrapper {
+      display: none;
+    }
+    &__phone {
+      width: 100%;
+    }
+    &__phone-line {
+      display: none;
+    }
+    &__order {
+      width: 100%;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 4px;
+      background-color: transparent;
+      border: 2px solid $red;
+      color: red;
+      text-transform: uppercase;
+      margin-top: 0;
+      &:hover {
+        background-color: $red;
+        color: white;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+  &-fix .header__order {
+    display: none;
+  }
+  &-fix .header__phone-wrapper {
+    display: block;
+  }
+  &-fix .menu__link-fix {
+    display: none;
+  }
+}

@@ -1,0 +1,187 @@
+.intro {
+  padding-top: 32px;
+  &__description {
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__heading {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__heading-red {
+    color: $red;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 30px 0 40px;
+    text-align: center;
+  }
+  &__order {
+    display: block;
+    margin: 0 auto;
+    width: 205px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 16px;
+    border-radius: 6px;
+    background-color: $red;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid $red;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+      color: $red;
+      background-color: #fff;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__present {
+    display: block;
+    width: 112px;
+    margin: 0 auto;
+    padding: 35px 0 35px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blue;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: -25px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/present.svg");
+      background-repeat: no-repeat;
+    }
+    &:hover {        
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+  }
+&__img {
+  display: block;
+  margin: 0 auto;
+}
+  &__set {
+    padding: 40px 0 20px;
+  }
+
+  &__set-wrapper {
+    padding-bottom: 20px;
+  }
+
+  &__set-link {
+    display: block;
+    height: 110px;
+    width: 288px;
+    margin: 0 auto;
+    color: $grey;
+    border: 2px solid $grey;
+    border-radius: 14px;
+    position: relative;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(0.95);
+      color: $red;
+    }
+    &:hover .intro__set-img {
+      fill: $red;
+      stroke: $red;
+    }
+    &:active {
+      opacity: 0.6;
+    }
+  }
+  &__set-link--active {
+    color: black;
+    fill: $red;
+    
+    border: 2px solid $red;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__set-heading {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100px;
+    position: absolute;
+    top: 28px;
+    left: 22px;
+  }
+  &__set-img {
+    fill: $grey;
+    stroke: $grey;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &__set-img--active {
+    fill: $red;
+    stroke: $red;
+  }
+}
+
+@media (min-width: 1130px) {
+  .intro {
+    padding-top: 120px;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__description {
+      width: 435px;
+    }
+    &__heading {
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: 700;
+      text-align: left;
+      width: 100%;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+      width: 350px;
+      padding: 40px 0 70px;
+      text-align: left;
+    }
+    &__links {
+      width: 470px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__order {
+      margin: 0;
+    }
+    &__set {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 100px 0 50px;
+    }
+    &__set-wrapper {
+      padding-bottom: 20px;
+      width: 338px;
+      margin-right: 27px;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+    &__set-link {
+      height: 110px;
+      width: 100%;
+    }
+  }
+}
