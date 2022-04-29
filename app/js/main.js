@@ -1,3 +1,5 @@
+const shimGetOwnPropertyDescriptors = require("object.getownpropertydescriptors/shim");
+
 var  navMenu = document.querySelector('.header__wrapper');
 var  navOpen = document.querySelector('.header__btn');
 var  main  = document.querySelector('.main');
@@ -17,3 +19,4 @@ navOpen.addEventListener('click', function() {
         main.classList.remove('main--active');
     }
 });
+

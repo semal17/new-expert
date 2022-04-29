@@ -18,6 +18,10 @@
       as="font"
       crossorigin
     />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="preload" href="css/style.min.css" as="style" crossorigin/>
     <link rel="stylesheet" href="css/style.min.css"/>
 
@@ -195,9 +199,9 @@
                 во всех социальных сетях</p>
                 <a href="#" class="social__save">pdf прайс</a>
                 <div class="social__wrapper">
-                <div class="social__slider">
-                    <ul class="social__list">
-                        <li class="social__item">
+                <div class="social__slider swiper">
+                    <ul class="social__list swiper-wrapper">
+                        <li class="social__item swiper-slide">
                             <a href="#" class="social__link">
                                 <img
                                 src="images/Facebook@1x.png"
@@ -207,7 +211,7 @@
                                 <span class="social__link-text">2 000 000 подписок</span>
                             </a>
                         </li>
-                        <li class="social__item">
+                        <li class="social__item swiper-slide">
                             <a href="#" class="social__link">
                                 <img
                                 src="images/vk@1x.png"
@@ -217,7 +221,7 @@
                                  <span class="social__link-text">5 000 000 подписок</span>
                             </a>
                         </li>
-                        <li class="social__item">
+                        <li class="social__item swiper-slide">
                             <a href="#" class="social__link">
                                 <img
                                 src="images/instagram@1x.png"
@@ -226,18 +230,18 @@
                                 class="social__link-img"/>                         
                                      <span class="social__link-text">10 000 000 подписок</span>
                             </a>
-                        </li>
-                        <li class="social__item">
+                          </li>
+                        <li class="social__item swiper-slide">
                             <a href="#" class="social__link">
                                 <img
                                 src="images/linkedin@1x.png"
                                 srcset="images/linkedin@2x.png 2x"
                                 alt="Инстаграмм"
-class="social__link-img"/>                        
+                                class="social__link-img"/>                        
         <span class="social__link-text">8 000 000 подписок</span>
                             </a>
                         </li>
-                        <li class="social__item">
+                        <li class="social__item swiper-slide">
                             <a href="#" class="social__link">
                                 <img
                                 src="images/Facebook@1x.png"
@@ -247,7 +251,7 @@ class="social__link-img"/>
                                 <span class="social__link-text">2 000 000 подписок</span>
                             </a>
                         </li>
-                        <li class="social__item">
+                        <li class="social__item swiper-slide">
                             <a href="#" class="social__link">
                                 <img
                                 src="images/vk@1x.png"
@@ -257,7 +261,7 @@ class="social__link-img"/>
                                  <span class="social__link-text">5 000 000 подписок</span>
                             </a>
                         </li>
-                        <li class="social__item">
+                        <li class="social__item swiper-slide">
                             <a href="#" class="social__link">
                                 <img
                                 src="images/instagram@1x.png"
@@ -267,7 +271,7 @@ class="social__link-img"/>
                                      <span class="social__link-text">10 000 000 подписок</span>
                             </a>
                         </li>
-                        <li class="social__item">
+                        <li class="social__item swiper-slide">
                             <a href="#" class="social__link">
                                 <img
                                 src="images/linkedin@1x.png"
@@ -278,10 +282,10 @@ class="social__link-img"/>
                             </a>
                         </li>
                     </ul>
-                    <button type="button" class="social__btn social__btn--left"></button>
-                <button type="button" class="social__btn social__btn--right"></button>
-                </div>                
-                <span class="social__scroll"></span>
+                    <button type="button" class="swiper-button-prev"></button>
+                <button type="button" class="swiper-button-next"></button>
+                <div class="swiper-scrollbar"></div>
+                </div> 
             </div>
         </div>
       </section>      
@@ -884,7 +888,9 @@ class="social__link-img"/>
     </div>
   </div>
 </footer>
-
-    <script src="js/main.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/slider.js"></script>    
+<script src="js/main.min.js"></script>
+    
   </body>
 </html>
