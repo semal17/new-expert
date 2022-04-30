@@ -9,6 +9,7 @@
   &__list {
     display: flex;
   }
+  
   &__item {
     flex-shrink: 0;
     width: 288px;
@@ -202,6 +203,11 @@ transition: transform 0.3s;
         margin-right: 0;
       }
     }
+
+    &__list--hight {
+      height: 1135px;
+    }
+
     &__item {
       width: 336px;
       padding: 30px 15px 20px;
@@ -238,8 +244,8 @@ transition: transform 0.3s;
         &::before {
             content: "";
             position: absolute;
-            top: 0;
-            right: -30px;
+            top: 3px;
+            right: 180px;
             width: 20px;
             height: 20px;
             background-image: url("../images/chevron-down.svg");
