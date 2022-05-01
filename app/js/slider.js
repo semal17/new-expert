@@ -10,17 +10,17 @@ new Swiper('.social__slider', {
 
   slidesPerView: 4,
 
-  spaceBetween: 50,
+  spaceBetween: 30,
 
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
     },
-    500: {
+    440: {
       slidesPerView: 2,
     },
     1130: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     }
   }
 });

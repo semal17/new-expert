@@ -1,9 +1,9 @@
-const shimGetOwnPropertyDescriptors = require("object.getownpropertydescriptors/shim");
+// const shimGetOwnPropertyDescriptors = require("object.getownpropertydescriptors/shim");
 
-var  navMenu = document.querySelector('.header__wrapper');
-var  navOpen = document.querySelector('.header__btn');
-var  main  = document.querySelector('.main');
-var  headerTopWrapper = document.querySelector('.header__top-wrapper');
+let  navMenu = document.querySelector('.header__wrapper');
+let  navOpen = document.querySelector('.header__btn');
+let  main  = document.querySelector('.main');
+let  headerTopWrapper = document.querySelector('.header__top-wrapper');
  
 
 navOpen.addEventListener('click', function() {
