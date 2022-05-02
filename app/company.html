@@ -443,8 +443,8 @@
             на PR услуги</h2>
         </div>
 
-        <div class="price__wrapper">
-          <ul class="price__list">
+        <div class="price__wrapper swiper">
+          <ul class="price__list swiper-wrapper">
             <li class="price__item price__desktop">
               <svg class="price__img" width="48" height="48">
                 <use xlink:href="images/sprites.svg#price"></use>
@@ -453,7 +453,7 @@
                 на PR услуги</h2>
               <p class="price__text">Показать все</p>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «Пробный»</h4>
                 <ul class="price__intro-list">
@@ -477,7 +477,7 @@
                 </div>
               </div>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «Легкий старт»</h4>
                 <ul class="price__intro-list">
@@ -501,7 +501,7 @@
                 </div>
               </div>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «Стартап»</h4>
                 <ul class="price__intro-list">
@@ -525,7 +525,7 @@
                 </div>
               </div>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «Бизнес»</h4>
                 <ul class="price__intro-list">
@@ -549,7 +549,7 @@
                 </div>
               </div>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «ПРО»</h4>
                 <ul class="price__intro-list">
@@ -573,7 +573,7 @@
                 </div>
               </div>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «Пробный»</h4>
                 <ul class="price__intro-list">
@@ -597,7 +597,7 @@
                 </div>
               </div>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «Легкий старт»</h4>
                 <ul class="price__intro-list">
@@ -621,7 +621,7 @@
                 </div>
               </div>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «Стартап»</h4>
                 <ul class="price__intro-list">
@@ -645,7 +645,7 @@
                 </div>
               </div>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «Бизнес»</h4>
                 <ul class="price__intro-list">
@@ -669,7 +669,7 @@
                 </div>
               </div>
             </li>
-            <li class="price__item">
+            <li class="price__item swiper-slide">
               <div class="price__intro">
                 <h4 class="price__intro-heading">Пакет «ПРО»</h4>
                 <ul class="price__intro-list">
@@ -694,17 +694,12 @@
               </div>
             </li>
           </ul>
+          
         </div>
         <div class="price__nav">
-          <button type="button" class="price__nav-button price__nav-button--left"></button>
-          <div class="price__nav-wrapper">
-            <span class="price__nav-circle price__nav-circle--active"></span>
-            <span class="price__nav-circle"></span>
-            <span class="price__nav-circle"></span>
-            <span class="price__nav-circle"></span>
-            <span class="price__nav-circle"></span>
-          </div>
-          <button type="button" class="price__nav-button price__nav-button--right"></button>
+          <button type="button" class="price__nav-button price__nav-button--left swiper-button-prev"></button>
+          <div class="price-pagination swiper-pagination"></div>          
+          <button type="button" class="price__nav-button price__nav-button--right swiper-button-next"></button>
         </div>
       </div>
     </section>

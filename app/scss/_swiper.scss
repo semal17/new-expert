@@ -19,6 +19,90 @@
   }
 }
 
+.swiper-slide.price__item {
+  width: 100%;
+}
+
+.price__wrapper.swiper {
+  padding-top: 30px;
+}
+
+.price-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $grey;
+  cursor: pointer;
+}
+
+.price-pagination .swiper-pagination-bullet-active {
+  background-color: $red;
+}
+
+.price__nav-button.swiper-button-prev {
+  z-index: 15;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  transition: transform 0.3s;
+  &::after {
+    opacity: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 21px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/price-button.svg");
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.price__nav-button.swiper-button-next {
+  z-index: 15;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  transition: transform 0.3s;
+  &::after {
+    opacity: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 21px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/price-button-right.svg");
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+  &:active {
+    opacity: 0.4;
+  }
+}
+
 @media (min-width: 1130px) {
   .social-scrollbar {
     display: none;
@@ -26,7 +110,7 @@
 
   .advantegs-scrollbar {
     display: block;
-    left: 85px;    
+    left: 85px;
     background-color: $grey;
   }
 
@@ -82,7 +166,6 @@
       outline: none;
       cursor: pointer;
       left: -100px;
-
       &::after {
         opacity: 0;
       }
