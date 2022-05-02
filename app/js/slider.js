@@ -1,3 +1,5 @@
+console.log(document.documentElement.scrollWidth);
+
 new Swiper('.social__slider', {
   navigation: {
     nextEl: '.swiper-button-next',
@@ -6,6 +8,7 @@ new Swiper('.social__slider', {
 
   scrollbar: {
     el: '.swiper-scrollbar',
+    draggable: true,
   },
 
   slidesPerView: 4,
@@ -24,6 +27,33 @@ new Swiper('.social__slider', {
     }
   }
 });
+
+
+new Swiper('.advantegs__column', {
+
+  slidesPerView: 6,
+
+  spaceBetween: 0,
+
+  direction: 'vertical',
+
+  breakpoints: {
+    1130: {
+      slidesPerView: 3,
+
+      spaceBetween: 30,
+
+      direction: 'vertical',     
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+        dragSize: 48,
+      },
+    }
+  }
+});
+
 
 let priceList = document.querySelector('.price__list');
 

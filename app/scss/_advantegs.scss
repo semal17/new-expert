@@ -1,5 +1,9 @@
 .advantegs {
   margin: 58px 0 238px;  
+  &__column {
+    height: 1050px;
+   
+  }
   &__link {
     display: none;
   }
@@ -25,13 +29,21 @@
     margin: 0;
     margin-bottom: 560px;
     height: 460px;
-    overflow: hidden;
     &-company {
       margin-top: 150px;
     }
     &__wrapper {
       display: flex;
       justify-content: space-between;
+    }
+    &__column {      
+      height: 500px;
+      width: 100%;
+    }
+    &__list {
+      width: 500px;
+      position: relative;
+      right: -200px;
     }
     &__title {
       padding-left: 40px;
@@ -65,73 +77,12 @@
       padding: 37px 0;
     }
     &__united {
-      display: flex;
-      justify-content: space-between;
+      position: relative;
       width: 704px;
     }
-    &__scroll-wrapper {
-      margin-left: 30px;
-      cursor: pointer;
-    }
-    &__scroll {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &__scroll-circle {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background-color: $red;
-      display: block;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 12px;
-        left: 19px;
-        height: 6px;
-        width: 10px;
-        background-image: url("../images/scroll.svg");
-        background-repeat: no-repeat;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 12px;
-        left: 19px;
-        height: 6px;
-        width: 10px;
-        background-image: url("../images/scroll.svg");
-        background-repeat: no-repeat;
-        transform: rotate(180deg);
-      }
-      &:hover {
-        opacity: 0.7;
-      }
-      &:active {
-        opacity: 0.4;
-      }
-    }
-    &__scroll-line {
-      display: block;
-      height: 324px;
-      width: 1px;
-      background-color: $grey;
-    }
-    &__scroll-figure {
-      display: block;
-      font-weight: 700;
-    }
-    &__scroll-number {
-      padding-top: 30px;
-    }
-    &__scroll-part {
-      color: #9ea5b7;
-    }
+    
     &__item {
-      padding: 0 0 60px;
+      padding: 0;
     }
     &__item-wrapper {
       display: flex;

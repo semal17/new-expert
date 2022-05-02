@@ -9,6 +9,8 @@
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin />
   <link rel="preload" href="css/style.min.css" as="style" crossorigin />
   <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
 
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png" />
@@ -715,33 +717,11 @@
             <a href="#" class="advantegs__link">Узнать больше</a>
             <img src="images/advan@1x.png" srcset="images/advan@2x.png 2x" alt="Супермен" class="advantegs__img" />
           </div>
-          <div class="advantegs__united">
-            <div class="advantegs__scroll-wrapper">
-              <div class="advantegs__scroll">
-                <span class="advantegs__scroll-circle"></span>
-                <span class="advantegs__scroll-line"></span>
-              </div>
-              <div class="advantegs__scroll-figure">
-                <p class="advantegs__scroll-number advantegs__scroll-first">
-                  01<span class="advantegs__scroll-part"> / 05</span>
-                </p>
-                <p class="advantegs__scroll-number advantegs__scroll-second">
-                  02<span class="advantegs__scroll-part"> / 05</span>
-                </p>
-                <p class="advantegs__scroll-number advantegs__scroll-third">
-                  03<span class="advantegs__scroll-part"> / 05</span>
-                </p>
-                <p class="advantegs__scroll-number advantegs__scroll-fourth">
-                  04<span class="advantegs__scroll-part"> / 05</span>
-                </p>
-                <p class="advantegs__scroll-number advantegs__scroll-fifth">
-                  05<span class="advantegs__scroll-part"> / 05</span>
-                </p>
-              </div>
-            </div>
-            <div class="advantegs__column">
-              <ul class="advantegs__list">
-                <li class="advantegs__item">
+          <div class="advantegs__united">            
+            <div class="advantegs__column swiper">
+              <div class=" advantegs-scrollbar swiper-scrollbar"></div>
+              <ul class="advantegs__list swiper-wrapper">
+                <li class="advantegs__item swiper-slide">
                   <div class="advantegs__item-wrapper">
                     <img src="images/adv6@1x.png" srcset="images/adv6@2x.png 2x" alt="Ракета"
                       class="advantegs__item-img" width="100" height="100" />
@@ -750,7 +730,7 @@
                     </p>
                   </div>
                 </li>
-                <li class="advantegs__item">
+                <li class="advantegs__item swiper-slide">
                   <div class="advantegs__item-wrapper">
                     <img src="images/adv7@1x.png" srcset="images/adv7@2x.png 2x" alt="КОРАБЛЬ"
                       class="advantegs__item-img" width="100" height="100" />
@@ -759,7 +739,7 @@
                     </p>
                   </div>
                 </li>
-                <li class="advantegs__item">
+                <li class="advantegs__item swiper-slide">
                   <div class="advantegs__item-wrapper">
                     <img src="images/adv8@1x.png" srcset="images/adv8@2x.png 2x" alt="График"
                       class="advantegs__item-img" width="100" height="100" />
@@ -768,7 +748,7 @@
                     </p>
                   </div>
                 </li>
-                <li class="advantegs__item">
+                <li class="advantegs__item swiper-slide">
                   <div class="advantegs__item-wrapper">
                     <img src="images/adv9@1x.png" srcset="images/adv9@2x.png 2x" alt="Консультант"
                       class="advantegs__item-img" width="100" height="100" />
@@ -777,7 +757,7 @@
                     </p>
                   </div>
                 </li>
-                <li class="advantegs__item">
+                <li class="advantegs__item swiper-slide">
                   <div class="advantegs__item-wrapper">
                     <img src="images/adv10@1x.png" srcset="images/adv10@2x.png 2x" alt="Этикетка скидки"
                       class="advantegs__item-img" width="100" height="100" />
@@ -899,6 +879,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/sliderCompany.js"></script>
   <script src="js/main.min.js"></script>
 </body>
