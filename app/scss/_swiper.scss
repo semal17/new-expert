@@ -235,6 +235,14 @@
   background-color: $red;
 }
 
+.slider__swiper-top {
+  display: none;
+}
+
+.slider__item  {
+  width: 100% !important;
+}
+
 
 @media (min-width: 1130px) { 
   .settings__social-item.swiper-slide {
@@ -276,6 +284,24 @@
     cursor: pointer;
   }
   
+
+  .swiper-slide-thumb-active .slider__line-top {
+    background-color: $red;
+      &::before {
+        width: 20px;
+        height: 20px;
+        border: 2px solid $red;
+        background-color: $red;
+      }
+  }
+
+  .slider__swiper-top {
+    padding-bottom: 20px;
+  }
+
+  .slider__swiper-top {
+    display: block;
+  }
   
 
 }

@@ -1,68 +1,37 @@
-new Swiper('.advantegs__column', {
+// new Swiper('.slider__list--swiper', {
 
-    slidesPerView: 6,
+//   slidesPerView: 1,
+//   centeredSlides: true,
 
-    spaceBetween: 0,
+//   thumbs: {
+//     swiper: {
+//       el: '.slider__swiper-top',
+//       slidesPerView: 5,  
+//     }
+    
+//   }
+ 
 
-    direction: 'vertical',
+// });
 
-    breakpoints: {
-        1130: {
-            slidesPerView: 3,
+// let sliderWrapper = document.querySelector('.slider__list--swiper');
+// let sliderItems = document.querySelectorAll('.slider__item');
+// let sliderList = document.querySelector('.slider__list');
 
-            spaceBetween: 30,
+// if (document.body.clientWidth < 1130) {
+//   sliderWrapper.classList.remove('swiper');
+//   sliderList.classList.remove('swiper-wrapper');
+//   sliderItems.forEach(item => item.classList.remove('swiper-slide'));
+// }
 
-            direction: 'vertical',
-
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-                dragSize: 48,
-            },
-        }
-    }
-});
-
-
-new Swiper('.settings__social', {
-
-    navigation: {
-        nextEl: '.settings__btn--down',
-        prevEl: '.settings__btn--up',
-    },
-
-    scrollbar: {
-        el: '.settings__scrolling',
-        draggable: true,
-    },
-
-    slidesPerView: 1,
-
-    spaceBetween: 20,
-
-    breakpoints: {
-        200: {
-            slidesPerView: 1,
-
-            grid: {
-                rows: 1,
-            },
-
-            spaceBetween: 40,
-
-            direction: 'horizontal',
-
-        },
-        1130: {
-
-            slidesPerView: 3,
-            grid: {
-                rows: 2,
-            },
-
-            spaceBetween: 40,
-
-            direction: 'vertical',
-        }
-    }
-});
+// window.addEventListener('resize', function () {
+//   if (document.body.clientWidth < 1130) {
+//     sliderWrapper.classList.remove('swiper');
+//     sliderList.classList.remove('swiper-wrapper');
+//     sliderItems.forEach(item => item.classList.remove('swiper-slide'));
+//   } else {
+//     sliderWrapper.classList.add('swiper');
+//     sliderList.classList.add('swiper-wrapper');
+//     sliderItems.forEach(item => item.classList.add('swiper-slide'));
+//   }
+// });
