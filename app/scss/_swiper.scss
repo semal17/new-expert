@@ -23,6 +23,10 @@
   width: 100%;
 }
 
+.social__item.swiper-slide {
+  height: 145px;
+}
+
 .price__wrapper.swiper {
   padding-top: 30px;
 }
@@ -108,7 +112,7 @@
     display: none;
   }
 
-  .advantegs-scrollbar {
+  .advantegs-scrollbar.swiper-scrollbar {
     display: block;
     left: 85px;
     background-color: $grey;
@@ -201,4 +205,77 @@
       }
     }
   }
+}
+
+//settings-social
+.settings__social.swiper {
+  height: 200px !important;
+}
+
+.settings__btn.swiper-button-prev {
+ display: none;
+}
+
+.settings__btn.swiper-button-next { 
+  display: none;
+}
+
+.settings__social-item.swiper-slide {
+  // width: 300px !important;
+  height: 116px;
+  margin-left: 0 !important;
+}
+
+.settings__scrolling.swiper-scrollbar {  
+  background-color: $grey;
+  cursor: pointer;
+}
+
+.settings__scrolling .swiper-scrollbar-drag {
+  background-color: $red;
+}
+
+
+@media (min-width: 1130px) { 
+  .settings__social-item.swiper-slide {
+    width: 230px !important;
+    height: 116px;
+  }
+
+  .settings__social.swiper {
+    height: 450px !important;
+  }
+  
+  .settings__btn.swiper-button-prev {
+    left: 0;
+    display: block;
+    top: 30px;
+    width: 48px;
+    height: 48px;
+    &::after {
+      opacity: 0;
+    }
+  }
+  
+  .settings__btn.swiper-button-next { 
+    top: 80px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    &::after {
+      opacity: 0;
+    }
+  }
+  
+  .settings__scrolling.swiper-scrollbar {
+    left: 23px;
+    height: 350px !important;
+    top: 130px !important;
+    background-color: $grey;
+    cursor: pointer;
+  }
+  
+  
+
 }

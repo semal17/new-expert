@@ -28,7 +28,11 @@ let priceWrapper = document.querySelector('.price__wrapper');
 let priceItems = document.querySelectorAll('.price__item'); 
 let priceList = document.querySelector('.price__list');
 
-
+if(document.body.clientWidth > 1130) {
+  priceWrapper.classList.remove('swiper');
+  priceList.classList.remove('swiper-wrapper');
+  priceItems.forEach(item => item.classList.remove('swiper-slide'));
+}
 
 window.addEventListener('resize', function() {
   if(document.body.clientWidth > 1130) {
@@ -65,4 +69,47 @@ new Swiper('.price__wrapper', {
   },
 
   
+});
+
+new Swiper('.settings__social', {
+
+  navigation: {
+      nextEl: '.settings__btn--down',
+      prevEl: '.settings__btn--up',
+  },
+
+  scrollbar: {
+      el: '.settings__scrolling',
+      draggable: true,
+  },
+
+  slidesPerView: 1,
+
+  spaceBetween: 20,
+
+  breakpoints: {
+      200: {
+          slidesPerView: 1,
+
+          grid: {
+              rows: 1,
+          },
+
+          spaceBetween: 40,
+
+          direction: 'horizontal',
+
+      },
+      1130: {
+
+          slidesPerView: 3,
+          grid: {
+              rows: 2,
+          },
+
+          spaceBetween: 40,
+
+          direction: 'vertical',
+      }
+  }
 });

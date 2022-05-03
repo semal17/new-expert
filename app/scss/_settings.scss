@@ -81,38 +81,21 @@
     width: 100%;
     order: 1;
   }
-  &__scrolling {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 2px;
-    background-color: $grey;
-    cursor: pointer;
-
-    &::before {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: -16px;
-      width: 30%;
-      height: 2px;
-      background-color: $red;
-    }
-  }
-
   &__social {
-    overflow: hidden;
+    width: 100%;
+    
   }
   &__social-list {
     display: flex;
     padding-top: 40px;
+    padding-bottom: 20px;
   }
   &__social-item {
     flex-shrink: 0;
     width: 228px;
     height: 114px;
     background-color: #f7f9fd;
-    margin: 5px 28px 5px 0;
+    // margin: 5px 28px 5px 0;
     border-radius: 14px;
     transition: transform 0.3s;
     &:hover {
@@ -142,6 +125,9 @@
     text-align: center;
     position: absolute;
     bottom: 5px;
+  }
+  &__btn { 
+display: none;
   }
 }
 
@@ -233,6 +219,7 @@
       align-items: center;
     }
     &__btn {
+      display: block;
       width: 48px;
       height: 48px;
       border-radius: 50%;
@@ -254,32 +241,23 @@
     }
     &__btn--down {
       background-image: url("../images/down.svg");
+    }  
+    &__social {
+      height: 450px;
+      width: 100%;
     }
-    &__scrolling {
-      margin-top: 40px;
-      display: block;
-      position: relative;
-      width: 2px;
-      height: 290px;
-      background-color: $grey;
-      &::before {
-        bottom: 0;
-        top: 0;
-        left: 0px;
-        width: 2px;
-        height: 105px;
-      }
-    }    
     &__social-list {
       display: flex;
       flex-wrap: wrap;
       padding-top: 0;
-      width: 517px;
+      width: 100%;
+      right: -90px;
     }
     &__social-item {
       width: 230px;
       height: 116px;
       margin: 0 56px 55px 0;
+      margin-left: 0 !important;
       &:nth-child(2n) {
         margin: 0 0 55px 0;
       }
