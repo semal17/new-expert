@@ -148,10 +148,10 @@
       transform: rotate(180deg);
     }
     &:hover {
-      opacity: 0.7;
+      opacity: 0.95;
     }
     &:active {
-      opacity: 0.4;
+      opacity: 0.9;
     }
   }
   .social__button.swiper {
@@ -241,6 +241,10 @@
 
 .slider__item  {
   width: 100% !important;
+}
+
+.advantegs__column.swiper-vertical {
+  touch-action: auto;
 }
 
 

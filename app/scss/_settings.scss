@@ -109,12 +109,11 @@
   &__social-link {
     height: 100%;
     width: 100%;
-    display: block;
     position: relative;
+    display: flex;
+    align-items: center;
   }
   &__social-img {
-    display: block;
-    padding-top: 33px;
     margin: auto;
   }
   &__social-text {
