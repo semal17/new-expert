@@ -10,6 +10,10 @@
   display: none;
 }
 
+.advantegs__column.swiper-pointer-events.swiper-vertical {
+  touch-action: auto;
+}
+
 .social__button.swiper {
   &-button-prev {
     display: none;
