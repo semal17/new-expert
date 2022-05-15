@@ -17,7 +17,6 @@ https://semal17.github.io/expert/index.html
 
 <img src='pict/expert_1.png'>
 <img src='pict/expert2.png'>
-<img src='pict/expert3.png'>
 <img src='pict/expert4.png'>
 <img src='pict/Screenshot_1.png'>
 
