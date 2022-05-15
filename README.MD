@@ -1,19 +1,25 @@
-# WSID <img src='pict/wsid-logo.png'>
+# Expert Target <img src='dist/images/favicons/mstile-150x150.png'>
 
-> SPA для составления необходимого списка нужных задач. 
+> Сайт для компании, занимающейся рекламным продвижением клиентов. 
 
-https://what-should-i-do-fawn.vercel.app/
+https://semal17.github.io/expert/index.html
 
 ## Описание
 
-При открытии приложения отображается список задач составленный нами. Список можно фильтровать на активные задачи (active), уже сделанный (done) и все (all). Вверху мы можем искать задачи из списка по введенной в поиске строке. Внизу есть функция добавления новых задач (+ add). Так же на странице находится счетчик выполненных и оставшихся задач.
+Сайт для продвижения рекламных компаний. Продвижение происходит через социальные сети, контекстную рекламу и PR-компании. На сайте можно узнать, через какие социальные сети, сайты и сми компания продвигает своих клиентов. Там же можно ознакомиться с тарифами и ценами на них, узнать преимущества данной компании и оставить заявку для дальнейшей работы.
 
-Задачи можно помечать как важные, выполненные (срабатывает при нажатии на задачу) и удалять задачу из списка совсем.
+Переключаться между страницами сайта можно как в блоке навигации, так и в блоке ниже презентационного блока:
+<img src='pict/Screenshot_2.png'>
+и внизу страниц:
+<img src='pict/Screenshot_3.png'>
 
+## Cкриншоты
 
-<img src='pict/wsid.png'>
-<img src='pict/mobile.png'>
-<img src='pict/desktop.png'>
+<img src='pict/expert_1.png'>
+<img src='pict/expert2.png'>
+<img src='pict/expert3.png'>
+<img src='pict/expert4.png'>
+<img src='pict/Screenshot_1.png'>
 
 
 ## Команды
@@ -31,15 +37,11 @@ https://what-should-i-do-fawn.vercel.app/
       <td>Установить зависимости</td>
     </tr>
     <tr>
-      <td><code>npm start</code></td>
+      <td><code>gulp</code></td>
       <td>Запустить приложение в режиме разработки.</td>
-    </tr>
-     <tr>
-      <td><code>npm test</code></td>
-      <td>Запуск тестов</td>
-    </tr>
+    </tr>     
     <tr>
-      <td><code>npm run build</code></td>
+      <td><code>gulp build</code></td>
       <td>Собрать проект для продакшена</td>
     </tr>
   </tbody>
@@ -48,6 +50,6 @@ https://what-should-i-do-fawn.vercel.app/
 
 ## Используемые технологии
 
-React, , React Hooks
+HTML, CSS, JS, SCSS, GULP
 
 
